@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>HomePage</title>
     </head>
-    <body>
-        <nav></nav>
+    <body id="homepage">
+        <header>
+                <h1>Calculate Here</h1>
+        </header>
+        <div id="intro">
+            <p>This website offers the users to interact with the basic calculator and makes it easire for them to access it.</p>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                
+                <form name="form1" id="calci">
+                    <table>
+                        <tr>
+                            <td colspan="4">
+                              <!-- The area to insert the numbers -->
+                              <input id="calc" type="text" name="answer"> 
+                            </td>
+                        </tr>
+                        <!--First row of numbers and Add Operation-->
+                        <tr>
+                        <!--Displays the numbers on the calculator-->
+                            <td>
+                                <input id="nos" type="button" value="1" onclick="form1.answer.value += '1' ">
+                            </td>
+                            <td>
+                                <input  id="nos" type="button" value="2" onclick="form1.answer.value += '2' ">
+                            </td>
+                            <td>
+                                <input  id="nos" type="button" value="3" onclick="form1.answer.value += '3' ">
+                            </td>
+                            <td>
+                                <input id="ops" type="button" value="+" onclick="form1.answer.value += '+' ">
+                            </td>
+                        </tr>
+                        <!--Second row of numbers and Sub Operation-->
+                        <tr>
+                            <td>
+                                <input  id="nos" type="button" value="4" onclick="form1.answer.value += '4' ">
+                            </td>
+                            <td>
+                                <input  id="nos" type="button" value="5" onclick="form1.answer.value += '5' ">
+                            </td>
+                            <td>
+                                <input  id="nos" type="button" value="6" onclick="form1.answer.value += '6' ">
+                            </td>
+                            <td>
+                                <input id="ops" type="button" value="-" onclick="form1.answer.value += '-' ">
+                            </td>
+                        </tr>
+                        <!--Third row of numbers and Multiply Operation-->
+                        <tr>
+                            <td>
+                                <input  id="nos" type="button" value="7" onclick="form1.answer.value += '7' ">
+                            </td>
+                            <td>
+                                <input id="nos" type="button" value="8" onclick="form1.answer.value += '8' ">
+                            </td>
+                            <td>
+                                <input  id="nos" type="button" value="9" onclick="form1.answer.value += '9' ">
+                            </td>
+                            <td>
+                                <input id="ops" type="button" value="*" onclick="form1.answer.value += '*' ">
+                            </td>
+                        </tr>
+                        <!--Forth row of numbers and Division Operation-->
+                        <tr>
+                            <td>
+                                <input id="ops" type="button" value="/" onclick="form1.answer.value += '/' ">
+                            </td>
+                            <td>
+                                <input id="nos" type="button" value="0" onclick="form1.answer.value += '0' ">
+                            </td>
+                            <td>
+                                <input id="nos" type="button" value="." onclick="form1.answer.value += '.' ">
+                            </td>
+                            <td>
+                                <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+                                <input id="ops" type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) ">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <!-- Display the Cancel button and erase all data entered by the user. -->
+                      <input type="button" value="Clear All" onclick="form1.answer.value = '' " id="clear" >
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                
+
+            </div>
+            <div class="col-sm-6" id="details">
+                <p>This is a basic calculator that has memory features identical to those of a compact portable 
+                    calculator. For performing addition, subtraction, division, and multiplication operations in 
+                    mathematics.</p><br>
+                    <!--Directions to use -->
+                    <h3>Directions to use:</h3>
+                    <ol>
+                        <li>Enter the first number (using calculator buttons).</li>
+                        <li>Select any Operational Button (+ , - , * , /).</li>
+                        <li>Enter the second number (again using calculator buttons).</li>
+                        <li>Click the "=" button to get the result.</li>
+                        <li>Press "Clear All" to start new calculations.</li>
+                    </ol>
+
+            </div>
+
+        </div>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
 </html>

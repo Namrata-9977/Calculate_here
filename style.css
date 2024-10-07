@@ -1,0 +1,99 @@
+#homepage{
+    background-color: rgb(152, 194, 194);
+    color: rgb(10, 104, 104);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#intro{
+    background-color: rgb(10, 104, 104);
+    color: aliceblue;
+    text-align: center;
+    padding: 1.5em;
+}
+#calci{
+    background-color: rgb(200, 226, 238);
+    padding: 1.5em;
+    padding-left: 10em;
+    text-align: center;
+    align-items: center;
+    margin: 0.5em;
+}
+table{
+    border:0.02em solid rgb(8, 62, 83);
+    padding: 1.2em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+#calc{
+    background-color: #ecf4f7;
+    color:rgb(8, 62, 83);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 0.02em solid rgb(8, 62, 83);
+    text-align: right;
+    margin: 0.5em;
+    width: 15em;
+}
+#calc:hover{
+    background-color: rgb(8, 62, 83);
+    color: #ecf4f7;
+}
+#clear{
+        background-color: rgb(8, 62, 83);
+        color: white;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        border: 0.02em solid white;
+        text-align: center;
+        margin: 0.5em;
+        width: 12em;
+}
+#clear:hover{
+    background-color: #ecf4f7;
+    color:rgb(8, 62, 83);
+    border: 0.02em solid rgb(8, 62, 83);
+    font-weight: bold;
+}
+#ops {
+    background-color: rgb(40, 105, 107);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0.2em;
+    height: 2.2em;
+    width: 2.2em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 2em;
+    border: 0.05em solid white;
+}
+#ops:hover{
+    color: rgb(40, 105, 107);
+    background-color: white;
+    border: 0.05em solid rgb(40, 105, 107);
+}
+#nos {
+    background-color: rgb(112, 166, 228);
+    color: rgb(31, 40, 119);
+    font-size: larger;
+    font-weight: bold;
+    padding: 0.2em;
+    height: 2.2em;
+    width: 2.2em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 2em;
+    border: 0.05em solid rgb(31, 40, 119);
+}
+#nos:hover{
+    color: rgb(112, 166, 228);
+    background-color: rgb(31, 40, 119);
+    border: 0.05em solid rgb(112, 166, 228);
+}
+#details{
+    margin-top: 1.2em;
+}
